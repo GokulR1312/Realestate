@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+    border: 2px solid #D4AF37 !important;
+    border-radius: 30px;
+    padding: 5px !important;
+}
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.navbar-collapse:hover{
+    border: 2px solid white !important;
+}
+.navbar-toggler{
+    background-color: white !important;
+}
+.nav-linnk{
+    padding: 2px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color:#ffc107 !important ;
+}
+.container-fluid{
+    background-color:#1E3A5F !important;
+    padding: 7px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.navbar{
+    padding: 0px !important;
+}
+/* Custom styling for the contact form */
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+
+footer {
+    margin-top: 3rem;
+}
+.header-text{
+    text-align: center;
+    color: #ffc107 !important;
+}
+footer {
+    margin-top: 3rem;
+}
+@media only screen and (min-width:300px) and (max-width:650px)
+{
+    .navbar-collapse{
+        border: none !important;
+    }
+}
+@media only screen and (min-width:650px) and (max-width:995px)
+{
+    .navbar-collapse{
+        border: none !important;
+    }
+}

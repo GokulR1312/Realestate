@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+    border: 2px solid #D4AF37 !important;
+    border-radius: 30px;
+    padding: 5px !important;
+}
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.navbar-collapse:hover{
+    border: 2px solid white !important;
+}
+.navbar-toggler{
+    background-color: white !important;
+}
+.nav-linnk{
+    padding: 2px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color:#ffc107 !important ;
+}
+.container-fluid{
+    background-color:#1E3A5F !important;
+    padding: 7px;
+}
+.navbar{
+    padding: 0px !important;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.header-text{
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 30px;
+    text-align: center;
+    color: #ffc107;
+}
+.services{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+}
+.sub-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 90%;
+    padding: 30px;
+}
+img{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1000ms;
+}
+.box:hover{
+    img{
+        border:10px double black;
+    }
+    box-shadow: 0 0 20px black;
+    transform: scale(0.9);
+    transition-duration: 0.10s;
+}
+.tony{
+    order: -1;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.box{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@media only screen and (min-width:300px) and (max-width:900px)
+{
+    .box{
+        flex-direction: column;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .tony{
+        order: 0;
+    }
+    .services,.sub-services{
+        width: 100%;
+    }
+    .navbar-collapse{
+        border: none !important;
+    }
+}
+@media only screen and (min-width:650px) and (max-width:995px)
+{
+    .navbar-collapse{
+        border: none !important;
+    }
+}
